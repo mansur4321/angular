@@ -1,0 +1,51 @@
+.zen {
+	padding: 16px 20px;
+	&__logo {
+		width: 69px;
+		height: 22px;
+	}
+	&__text {
+		padding: 16px 0 8px 0;
+		font-size: 13px;
+	    line-height: 16px;
+	    color: rgba(0,0,0,.5);
+	    font-weight: 500;
+	}
+
+	&__list {
+		&-item {
+			padding: 15px 0;
+			font-size: 14px;
+   			line-height: 18px;
+   			position: relative;
+   			padding-left: 40px;
+   			&:before {
+   				content: '';
+   				background: url('../img/zen-list.png') center / contain no-repeat;
+   				display: block;
+			    width: 24px;
+			    height: 24px;
+			    position: absolute;
+			    top: 12.5px;
+			    left: 0;
+			    z-index: 2;
+   			}
+
+   			&:after {
+   				content: '';
+   				background: url('../img/zen-list-red.png') center / contain no-repeat;
+   				display: block;
+			    width: 24px;
+			    height: 24px;
+			    position: absolute;
+			    top: 12.5px;
+			    left: 0;
+			    z-index: -1;
+   			}
+
+   			&:hover:after {
+   				z-index: 3;
+   			}
+		}
+	}
+}

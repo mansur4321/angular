@@ -1,0 +1,29 @@
+.ad-food {
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+	&__stroc {
+		display: flex;
+		justify-content: space-between;
+		padding: 8px 10px 0px 16px;
+	}
+
+	&__image {
+		padding: 4px 0 0 4px;
+		width: 296px;
+		height: 232px;
+		border-radius: 16px;
+	}
+
+	transition: box-shadow .3s cubic-bezier(.25,.1,.25,.1);
+	box-shadow: 0 2px 8px rgb(18 17 36 / 4%), 0 4px 32px rgb(18 17 36 / 8%);
+
+	&__subs-block {
+		padding: 0px 16px;
+
+	}
+
+	&:hover {
+		box-shadow: 0 2px 8px 7px rgb(18 17 36 / 10%), 0 4px 32px 7px rgb(18 17 36 / 10%);
+	}
+
+}

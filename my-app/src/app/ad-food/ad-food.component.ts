@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostBinding } from '@angular/core';
 
 @Component({
   selector: 'app-ad-food',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ad-food.component.less']
 })
 export class AdFoodComponent implements OnInit {
+
+  @HostBinding('attr.class') cssClass = 'ad-food _content-sidebar-framing'
 
   constructor() { }
 

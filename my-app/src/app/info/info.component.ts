@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostBinding } from '@angular/core';
 
 @Component({
   selector: 'app-info',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./info.component.less']
 })
 export class InfoComponent implements OnInit {
+
+  @HostBinding('attr.class') cssClass = 'info _wrapper-grid';
 
   constructor() { }
 

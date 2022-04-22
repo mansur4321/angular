@@ -1,0 +1,30 @@
+._wrapper-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+
+
+	._grid-news {
+		grid-column-start: 1;
+    	grid-column-end: 3;
+    	grid-row-start: 1;
+    	grid-row-end: 3;
+	}
+
+	._grid-traffic {
+		grid-column-start: 3;
+    	grid-column-end: 4;
+    	grid-row-start: 2;
+    	grid-row-end: 3;
+	}
+}
+
+.wrapper-main-content {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	min-width: 770px;
+}
+
+.wrapper-content {
+	width: 100%;
+}

@@ -1,15 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostBinding } from '@angular/core';
 
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
   styleUrls: ['./search.component.less']
 })
-export class SearchComponent implements OnInit {
+export class SearchComponent {
+  @HostBinding('attr.class') cssClass = 'search search-field__search';
 
-  constructor() { }
+  modelText = '';
+  indexVue = false;
 
-  ngOnInit(): void {
+  showText() {
+    this.indexVue = !this.indexVue;
   }
-
 }

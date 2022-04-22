@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostBinding } from '@angular/core';
 
 @Component({
   selector: 'app-actions',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./actions.component.less']
 })
 export class ActionsComponent implements OnInit {
+  @HostBinding('attr.class') cssClass = 'actions _mar-top-actions';
 
   constructor() { }
 

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -28,6 +29,12 @@ import { AppsComponent } from './apps/apps.component';
 import { NewsComponent } from './news/news.component';
 import { InfoComponent } from './info/info.component';
 import { InsideContainerComponent } from './inside-container/inside-container.component';
+import { OutsideContainerComponent } from './outside-container/outside-container.component';
+import { WrapperContentComponent } from './wrapper-content/wrapper-content.component';
+import { ContainerContentComponent } from './container-content/container-content.component';
+import { ColumnLeftComponent } from './column-left/column-left.component';
+import { WrapperMainContentComponent } from './wrapper-main-content/wrapper-main-content.component';
+import { AppCComponent } from './app-c/app-c.component';
 
 @NgModule({
   declarations: [
@@ -57,10 +64,17 @@ import { InsideContainerComponent } from './inside-container/inside-container.co
     NewsComponent,
     InfoComponent,
     InsideContainerComponent,
+    OutsideContainerComponent,
+    WrapperContentComponent,
+    ContainerContentComponent,
+    ColumnLeftComponent,
+    WrapperMainContentComponent,
+    AppCComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [

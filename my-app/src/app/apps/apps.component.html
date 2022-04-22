@@ -1,76 +1,17 @@
 <nav class="apps _apps-margin">
     <ul class="apps__list">
-        <li class="apps__elem">
-            <a href="#" class="app _color-link-black _link-style">
-                <img src="img/Ya-market.jpg" alt="market" class="app__logo _link-app">
-                <p class="app__text">Маркет</p>
-            </a>
-        </li>
-
-        <li class="apps__elem">
-            <a href="#" class="app _color-link-black _link-style">
-                <img src="img/Ya-video.jpg" alt="video" class="app__logo _link-app">
-                <p class="app__text">Видео</p>
-            </a>
-        </li>
-
-        <li class="apps__elem">
-            <a href="#" class="app _color-link-black _link-style">
-                <img src="img/Ya-picture.jpg" alt="picture" class="app__logo _link-app">
-                <p class="app__text">Картинки</p>
-            </a>
-        </li>
-
-        <li class="apps__elem">
-            <a href="#" class="app _color-link-black _link-style">
-                <img src="img/Ya-news.jpg" alt="news" class="app__logo _link-app">
-                <p class="app__text">Новости</p>
-            </a>
-        </li>
-
-        <li class="apps__elem">
-            <a href="#" class="app _color-link-black _link-style">
-                <img src="img/Ya-pointer.jpg" alt="map" class="app__logo _link-app _width-map-logo">
-                <p class="app__text">Карты</p>
-            </a>
-        </li>
-
-        <li class="apps__elem">
-            <a href="#" class="app _color-link-black _link-style">
-                <img src="img/Ya-translator.jpg" alt="translator" class="app__logo _link-app">
-                <p class="app__text">Переводчик</p>
-            </a>
-        </li>
-
-        <li class="apps__elem">
-            <a href="#" class="app _color-link-black _link-style">
-                <img src="img/Ya-music.jpg" alt="music" class="app__logo _link-app">
-                <p class="app__text">Музыка</p>
-            </a>
-        </li>
-
-        <li class="apps__elem">
-            <a href="#" class="app _color-link-black _link-style">
-                <img src="img/Ya-television.jpg" alt="television"
-                    class="app__logo _height-map-logo _mt-tv-logo _link-app">
-                <p class="app__text _text-mt-app">Программа</p>
-            </a>
-        </li>
-
-        <li class="apps__elem">
-            <a href="#" class="app _color-link-black _link-style">
-                <img src="img/Ya-car.jpg" alt="car" class="app__logo _link-app">
-                <p class="app__text">Авто.ру</p>
-            </a>
+        <li *ngFor="let app of appsData" class="apps__elem">
+            <app-app-c text="{{app.text}}" img="{{app.srcImg}}" class_img="{{app.classImg}}"
+                class_text="{{app.classText}}"></app-app-c>
         </li>
 
         <li class="apps__elem">
             <a href="#" class="app _color-link-black _link-style">
                 <div class="app__logos _link-app">
-                    <img src="img/Ya-poltory-circle.jpg" alt="conture" class="app__min-logo">
-                    <img src="img/Ya-kinopoisk.jpg" alt="kinopoisk" class="app__min-logo">
-                    <img src="img/Ya-house.jpg" alt="house" class="app__min-logo">
-                    <img src="img/Ya-two-finger.jpg" alt="two-finger" class="app__min-logo">
+                    <img src="../assets/img/Ya-poltory-circle.jpg" alt="conture" class="app__min-logo">
+                    <img src="../assets/img/Ya-kinopoisk.jpg" alt="kinopoisk" class="app__min-logo">
+                    <img src="../assets/img/Ya-house.jpg" alt="house" class="app__min-logo">
+                    <img src="../assets/img/Ya-two-finger.jpg" alt="two-finger" class="app__min-logo">
                 </div>
                 <p class="app__text _text-mt-app">ещё</p>
             </a>
